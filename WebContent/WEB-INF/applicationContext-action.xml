@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+	"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="loginAction" class="com.ihue.user.action.LoginAction"
+		singleton="false">
+		<property name="userManager">
+			<ref bean="userManager" />
+		</property>
+	</bean>
+
+	<bean id="homeAction" class="com.ihue.basicaction.HomeAction"
+		singleton="false">
+	</bean>
+</beans>
